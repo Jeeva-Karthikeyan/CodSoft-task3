@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root {
+    --shadow : rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --transparent-bg : #161516;
+    --text-clr : rgb(223, 208, 208);
+    --btn-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 56, 56);
+    background: linear-gradient(45deg, #161515);
+}
+
+.calc {
+    border: 1px solid rgb(36, 34, 34);
+    margin: 200px 0px 40px;
+    padding: 10px;
+    border-radius: 16px;
+    background: var(--transparent-bg);
+    box-shadow: var(--shadow);
+}
+
+input {
+    width: 272px;
+    border: 0.5px solid white;
+    border-radius: 15px;
+    padding: 24px;
+    margin: 10px;
+    background: var(--transparent-bg);
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    color: var(--text-clr);
+    box-shadow: var(--shadow);
+}
+
+input::placeholder {
+    color: var(--text-clr);
+}
+
+button {
+    border: 0.3px solid rgb(202, 198, 198);
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 15%;
+    background: var(--transparent-bg);
+    color: var(--text-clr);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow)
+}
+
+
+.operator {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: small;
+}
